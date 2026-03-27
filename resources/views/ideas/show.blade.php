@@ -1,24 +1,23 @@
 <x-layout>
-	<div class="mt-6 text-white">
-		<h1 class="font-bold">Your Idea</h1>
-
-		<div class="mt-6">
+	<div class="card bg-neutral p-6">
+		<div>
 			{{ $idea->description }}
 		</div>
 
 		<div class="mt-6">
 			<a href="/ideas/{{ $idea->id }}/edit">
-				<button type="submit"
-					class="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+				<button type="submit" class=" btn btn-soft btn-primary">
 					Edit
 				</button>
 			</a>
 
-			<a href="/ideas/{{ $idea->id }}/edit">
-				<button type="submit"
-					class="rounded-md bg-red-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
-					Delete
-				</button>
-			</a>
+			<button type="submit" form="delete-idea-form" class="btn btn-soft btn-error">
+				Delete
+			</button>
 		</div>
+
+		<form id="delete-idea-form" method="POST" action="/ideas/{{ $idea->id }}">
+			@csrf
+			@method('DELETE')
+		</form>
 </x-layout>
