@@ -2,19 +2,16 @@
 	<form method="POST" action="/ideas">
 		@csrf
 
-		<div class="col-span-full">
-			<label for="description" class="block text-sm/6 font-medium text-white">Create New Idea</label>
-			<div class="mt-2">
-				<textarea id="description" name="description" rows="3"
-					class="textarea w-full @error('description') textarea-error @enderror"></textarea>
+		<fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border border-base p-4 mx-auto">
+			<legend class="fieldset-legend">Create New Idea</legend>
 
-				<x-forms.error name="description" />
+			<label for="description" class="label">Description</label>
+			<textarea id="description" name="description" rows="3" placeholder="Have an idea you wanna save for later?"
+				class="textarea w-full @error('description') textarea-error @enderror"
+				required>{{ old('description') }}</textarea>
+			<x-forms.error name="description" />
 
-			</div>
-			<p class="mt-3 text-sm/6 text-gray-400">Have an idea you wanna save for later?</p>
-		</div>
-		<div class="mt-6 flex items-center gap-x-6">
-			<button type="submit" class="btn">Save</button>
-		</div>
+			<button type="submit" class="btn btn-neutral mt-4">Save</button>
+		</fieldset>
 	</form>
 </x-layout>

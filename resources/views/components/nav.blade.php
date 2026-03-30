@@ -16,7 +16,10 @@
                         <li><a>Submenu 2</a></li>
                     </ul>
                 </li> --}}
-                <li><a href="ideas/create">New Idea</a></li>
+                <li><a href="/ideas/create">New Idea</a></li>
+                @can('view-admin')
+                <li><a href="/admin">Admin</a></li>
+                @endcan
             </ul>
         </div>
         <a href="/ideas" class="btn btn-ghost text-xl">Ideaverse</a>
@@ -33,7 +36,10 @@
                     </ul>
                 </details>
             </li> --}}
-            <li><a href="ideas/create">New Idea</a></li>
+            <li><a href="/ideas/create">New Idea</a></li>
+            @can('view-admin')
+            <li><a href="/admin">Admin</a></li>
+            @endcan
         </ul>
     </div>
     <div class="navbar-end space-x-2">
