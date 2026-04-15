@@ -2,7 +2,8 @@
     <form action="/login" method="POST">
         @csrf
 
-        <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-full max-w-xs border border-base p-4 mx-auto">
+        <fieldset
+            class="fieldset bg-base-200 border-base-300 rounded-box w-full max-w-xs border border-base p-4 mx-auto">
             <legend class="fieldset-legend">Login</legend>
 
             <label class="label">Email</label>

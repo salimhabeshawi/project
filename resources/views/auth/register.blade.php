@@ -6,7 +6,8 @@
             <legend class="fieldset-legend">Register</legend>
 
             <label class="label">Name</label>
-            <input name="name" type="text" class="input w-full" placeholder="Your Name" value="{{ old('name')  }}" required />
+            <input name="name" type="text" class="input w-full" placeholder="Your Name" value="{{ old('name')  }}"
+                required />
 
             <label class="label">Email</label>
             <input name="email" type="email" class="input w-full" placeholder="Your Email" value="{{ old('email')  }}"
