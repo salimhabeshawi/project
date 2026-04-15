@@ -42,7 +42,7 @@
             @endcan
         </ul>
     </div>
-    <div class="navbar-end space-x-2">
+    <div class="navbar-end gap-2 flex-wrap justify-end">
         @auth
         <form method="POST" action="/logout">
             @csrf

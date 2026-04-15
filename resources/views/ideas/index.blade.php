@@ -3,7 +3,7 @@
 	<div class="mt-6 text-white">
 		<h1 class="font-bold">Your Ideas</h1>
 
-		<ul class="mt-6 grid grid-cols-2 gap-x-6 gap-y-4">
+		<ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
 			@foreach ($ideas as $idea)
 			<x-idea-card href="/ideas/{{ $idea->id  }}">
 				{{ $idea->description }}

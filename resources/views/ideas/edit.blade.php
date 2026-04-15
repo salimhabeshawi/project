@@ -3,7 +3,7 @@
 		@csrf
 		@method('PATCH')
 
-		<fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border border-base p-4 mx-auto">
+		<fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-full max-w-xs border border-base p-4 mx-auto">
 			<legend class="fieldset-legend">Edit Idea</legend>
 
 			<label for="description" class="label">Description</label>

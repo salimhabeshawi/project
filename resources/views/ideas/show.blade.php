@@ -4,7 +4,7 @@
 			{{ $idea->description }}
 		</div>
 
-		<div class="mt-6">
+		<div class="mt-6 flex flex-wrap gap-2">
 			<a href="/ideas/{{ $idea->id }}/edit">
 				<button type="submit" class=" btn btn-soft btn-primary">
 					Edit

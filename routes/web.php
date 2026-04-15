@@ -6,6 +6,10 @@ use App\Http\Controllers\IdeaController;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/', function () {
+    return 'Welcome to the home marketing page';
+});
+
 Route::middleware('auth')->group(function () {
     Route::get('/ideas', [IdeaController::class, 'index']);
     Route::get('/ideas/create', [IdeaController::class, 'create']);
