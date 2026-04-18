@@ -16,7 +16,7 @@
             <label class="label">Password</label>
             <input name="password" type="password" class="input w-full" placeholder="Your Password" required />
 
-            <button class="btn btn-neutral mt-4">Register</button>
+            <button class="btn btn-neutral mt-4" data-test="register-button">Register</button>
         </fieldset>
     </form>
 </x-layout>

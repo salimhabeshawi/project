@@ -1,0 +1,9 @@
+
+   PASS  Tests\Browser\IdeaTest
+  ✓ it shows all Ideas                                                   1.06s  
+  ✓ it shows an idea                                                     0.47s  
+  ✓ it shows an edit form to update an idea                              0.57s  
+
+  Tests:    3 passed (5 assertions)
+  Duration: 2.66s
+
